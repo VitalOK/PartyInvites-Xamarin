@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PartyInvites.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <FlexLayout Direction="Column"
+                    JustifyContent="SpaceEvenly"
+                    AlignItems="Center">
+            <Label x:Name="helloWorld"  
+                   Text="&lt;h1&gt;Hello world!&lt;/h1&gt;" 
+                   TextType="Html"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   />
+
+            <Label Text="&lt;h2&gt;We're going to have an exciting party.&lt;/h2&gt;" 
+               TextType="Html"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+            <Label Text="&lt;h3&gt;(To do: sell it better. Add pictures or something.)&lt;/h3&gt;"
+                   TextType="Html"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+            <Button Text="RSVP Now"
+                    TextColor="White"
+                    CornerRadius="5"
+                    BackgroundColor="Green"
+                    Clicked="Test"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    MinimumWidthRequest="100"
+                    WidthRequest="100"
+                    />
+        </FlexLayout>
+    </StackLayout>
+
+</ContentPage>

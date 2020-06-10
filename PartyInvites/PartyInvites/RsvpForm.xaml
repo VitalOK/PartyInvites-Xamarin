@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PartyInvites.RsvpForm">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="RsvpForm"
+                   BackgroundColor="Aquamarine"
+                   TextType="Html"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="lblerrorName" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+            <Label Text="Your name:"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+            <Entry Placeholder="Enter your name"
+                Text="{Binding Name}"
+                HeightRequest="50" />
+
+            <Label x:Name="lblerrorEmail" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+            <Label Text="Your email:"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+                <Entry Placeholder="Enter your email"
+                Text="{Binding Email}"
+                HeightRequest="50" />
+
+            <Label x:Name="lblerrorPhone" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+            <Label Text="Your phone:"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+            <Entry Placeholder="Enter your phone"
+                Text="{Binding Phone}"
+                HeightRequest="50" />
+
+                <Label Text="Will you attend?"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+            <Switch IsToggled="{Binding WillAttend}"/>
+
+
+            <Button Text="Submit RSVP"
+                        Clicked="OnSubmitRSVPClicked" />
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
